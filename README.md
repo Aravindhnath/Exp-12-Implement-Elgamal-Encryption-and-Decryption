@@ -21,7 +21,7 @@ Step 5:
 The decrypted message is verified to be the same as the original.
 
 # PROGRAM:
-```
+```c
 #include <stdio.h>
 #include <math.h>
 
@@ -70,13 +70,11 @@ int main() {
     // Step 6: Alice decrypts the message (decryptedMessage = (c2 * c1^(p-1-privateKeyA)) mod p)
     decryptedMessage = (c2 * modExp(c1, p - 1 - privateKeyA, p)) % p;
     printf("Decrypted message: %lld\n", decryptedMessage);
-
+    printf("Done by Aravindhnath - 212222100005")
     return 0;
 }
 ```
 # OUTPUT:
-
-![Screenshot 2024-10-17 081444](https://github.com/user-attachments/assets/0225193a-8c06-47f4-8fc6-ebb1152438dc)
-
+![Screenshot 2024-10-17 081444](Op1-cry12.png)
 # RESULT:
 The program for ElGamal encryption and decryption was executed successfully. Alice and Bob exchanged an encrypted message and verified that the decrypted message matched the original message.
